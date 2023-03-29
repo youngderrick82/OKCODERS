@@ -1,0 +1,38 @@
+.navbar {
+    z-index: 32;
+    font-size: 14px;
+    display: flex;
+    line-height: 1.5;
+    justify-content: space-between;
+    background-color: #161b22;
+    color: #fafafa;
+    padding: 16px;
+    width: 100vw;
+    margin-left: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.github-icon {
+    font-size: 32px;
+}
+
+.tag {
+    margin-right: 1px;
+    margin-bottom: 2px;
+    padding: 5px 8px;
+    width: 80px;
+    color: #58a6ff;
+    background-color: rgba(56, 139, 252, 0.15);
+    border-radius: 20rem;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

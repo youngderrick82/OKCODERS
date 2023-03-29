@@ -1,0 +1,130 @@
+body {
+    background-color: #303030;
+    width: 80vw;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    color: burlywood;
+}
+
+.navbar {
+    padding: 15px;
+    height: 50px;
+}
+
+.coffee-show {
+    display: flex;
+    height: 600px;
+    overflow: auto;
+}
+
+.coffee-show-text {
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    font-family: 'Alkatra', cursive;
+    color: wheat;
+}
+
+.header-text {
+    text-decoration: underline;
+}
+
+.header-image {
+    width: 50%;
+}
+
+.header-divider {
+    width: 50%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 3px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px gray;
+}
+
+.logo-name {
+    font-family: 'Alkatra', cursive;
+    color: burlywood;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px; 
+}
+
+a:link {
+    color: burlywood;
+    text-decoration: none;
+}
+
+a:visited {
+    color: burlywood;
+}
+
+a:hover {
+    transition: 1s;
+}
+
+li:hover {
+    transform: scale(.75);
+    transition: 1s;
+}
+
+.active-page {
+    border: 1px solid burlywood;
+    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border-radius: 10px;
+}
+
+/*Menu Items*/
+
+.menu-items {
+    width: 500px;
+    margin: auto;
+    color: burlywood;
+}
+
+.menu-logo {
+}
+
+.drink {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.drink-name {
+    width: 115px;
+    border: 1px solid black;
+}
+
+.drink:hover .drink-name {
+    transition: .5s;
+    box-shadow: 1px 1px 1em;
+}
+
+.line {
+    width: 175px;
+    height: 31px;
+    border-bottom: 1px dashed wheat;
+}
+
+/*About us*/
+
+.about-us {
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+}
