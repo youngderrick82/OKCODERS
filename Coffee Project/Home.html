@@ -9,44 +9,86 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="index.js"></script>
         <script src="https://kit.fontawesome.com/35df0ec2dc.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Lemonada:wght@700&display=swap" rel="stylesheet">
 
     </head>
     <body>
+        <!--Main navbar menu items for larger screens-->
+       
         <div class="navbar">
-        <!--Placeholder for the navbar-->
             <h3 class="logo-name">Dream Coffee Company</h3>
-            <ul class="nav-menu">
-                <li><a class="active-page" alt="home" href="Home.html">Home</a></li>
-                <li><a alt="menu" href="menu.html">Menu</a></li>
-                <li><a alt="about us" href="about-us.html">About Us</a></li>
-                <li><a alt="contact us" href="contact-us.html">Contact Us</a></li>
+            <ul class="navbar-menu">
+              <li><a class="active-page" alt="home" href="Home.html">Home</a></li>
+              <li><a alt="menu" href="menu.html">Menu</a></li>
+              <li><a alt="about us" href="about-us.html">About Us</a></li>
+              <li><a alt="contact us" href="contact-us.html">Contact Us</a></li>
             </ul>
-        </div>
+            <!--Cart Icon-->
+            <div class="cart-icon">
+              <i class="fa-solid fa-shopping-cart fa-lg"></i>
+              <span class="cart-count" id="cart-count">0</span>
+            </div>
+            <i class="fa-regular fa-user"></i>
+            </div>
+       
 
+        
+            <!--Menu icon items for smaller screens-->
+            <div class="navicon-menu">
+
+                
+                    <input type="checkbox" class="menu-btn" id="icon-button"/>
+                    <label for="icon-button" id="navicon-icon">&#9776;</label>
+                
+
+                <!--Collapsed Menu Cart Icon-->
+                <span class="cart-icon-sm item2">
+                    <i class="fa-solid fa-shopping-cart fa-lg"></i>
+                    <span class="cart-count">0</span>
+                </span>
+
+                <!--Menu Items-->
+                
+                <ul class="navicon-menu-list">
+                    <li><a class="nav-links" alt="home" href="Home.html">Home</a></li>
+                    <li><a class="nav-links" alt="menu" href="menu.html">Menu</a></li>
+                    <li><a class="nav-links" alt="about us" href="about-us.html">About Us</a></li>
+                    <li><a class="nav-links" alt="contact us" href="contact-us.html">Contact Us</a></li>
+                </ul>
+               
+                
+        
+            </div>
+
+        
+          
+         
+        
         <div class="coffee-show">
-            <img class="header-image" src="Images/mike-kenneally-tNALoIZhqVM-unsplash.jpg"/>
-            <div class="header-divider">
+            <div class="header-image">
+                <img src="Images/mike-kenneally-tNALoIZhqVM-unsplash.jpg">
+
+            </div>
             <div class="coffee-show-text">
                 <h1 class="header-text">Dream Coffee Company</h1>
                 <p>
                     The Dream Coffee Company was made with the customer in mind. Our goal is to provide a delicious beverage that aims to energize, refresh, and refocus with naturally sourced ingredients and sugar alternatives that are actually a better option and not just an unhealthy option with another name.
                 </p>
             </div>
-            </div>
+            
         </div>
         <div class="coffee-show">
-            <div class="header-divider">
+            
                 <div class="coffee-show-text">
                     <h1 class="header-text">Join Our Club</h1>
                     <p>Join today and get exclusive access to our newest flavors before anyone one else and get access to some of our members only benefits, including access an hour before and after our public access hours.</p>
                 </div>
-            </div>
+
                 <img class="header-image" src="Images/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg"/>
             </div>
-        </div>
         
         <footer>
             <div class="footer-container flex">

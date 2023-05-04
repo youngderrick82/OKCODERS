@@ -15,16 +15,52 @@
 
     </head>
     <body>
+
         <div class="navbar">
-        <!--Placeholder for the navbar-->
             <h3 class="logo-name">Dream Coffee Company</h3>
-            <ul class="nav-menu">
-                <li><a alt="home" href="Home.html">Home</a></li>
-                <li><a alt="menu" href="menu.html">Menu</a></li>
-                <li><a alt="about us" href="about-us.html">About Us</a></li>
-                <li><a class="active-page" alt="contact us" href="contact-us.html">Contact Us</a></li>
+            <ul class="navbar-menu">
+              <li><a alt="home" href="Home.html">Home</a></li>
+              <li><a alt="menu" href="menu.html">Menu</a></li>
+              <li><a alt="about us" href="about-us.html">About Us</a></li>
+              <li><a class="active-page" alt="contact us" href="contact-us.html">Contact Us</a></li>
             </ul>
-        </div>
+            <!--Cart Icon-->
+            <div class="cart-icon">
+              <i class="fa-solid fa-shopping-cart fa-lg"></i>
+              <span class="cart-count" id="cart-count">0</span>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            </div>
+       
+
+        
+            <!--Menu icon items for smaller screens-->
+            <div class="navicon-menu">
+
+                
+                    <input type="checkbox" class="menu-btn" id="icon-button"/>
+                    <label for="icon-button" id="navicon-icon">&#9776;</label>
+                
+
+                <!--Collapsed Menu Cart Icon-->
+                <span class="cart-icon-sm item2">
+                    <i class="fa-solid fa-shopping-cart fa-lg"></i>
+                    <span class="cart-count">0</span>
+                </span>
+                <i class="fa-regular fa-user"></i>
+
+                <!--Menu Items-->
+                
+                <ul class="navicon-menu-list">
+                    <li><a class="nav-links" alt="home" href="Home.html">Home</a></li>
+                    <li><a class="nav-links" alt="menu" href="menu.html">Menu</a></li>
+                    <li><a class="nav-links" alt="about us" href="about-us.html">About Us</a></li>
+                    <li><a class="nav-links" alt="contact us" href="contact-us.html">Contact Us</a></li>
+                </ul>
+               
+                
+        
+            </div>
 
         <div>
             <h1 style="color: burlywood;">Contact Us</h1>

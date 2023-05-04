@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="index.js"></script>
         <script src="https://kit.fontawesome.com/35df0ec2dc.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Lemonada:wght@700&display=swap" rel="stylesheet">
@@ -16,65 +17,125 @@
     </head>
     <body>
         <div class="navbar">
-        <!--Placeholder for the navbar-->
             <h3 class="logo-name">Dream Coffee Company</h3>
-            <ul class="nav-menu">
-                <li><a alt="home" href="Home.html">Home</a></li>
-                <li><a class="active-page" alt="menu" href="menu.html">Menu</a></li>
-                <li><a alt="about us" href="about-us.html">About Us</a></li>
-                <li><a alt="contact us" href="contact-us.html">Contact Us</a></li>
+            <ul class="navbar-menu">
+              <li><a alt="home" href="Home.html">Home</a></li>
+              <li><a class="active-page" alt="menu" href="menu.html">Menu</a></li>
+              <li><a alt="about us" href="about-us.html">About Us</a></li>
+              <li><a alt="contact us" href="contact-us.html">Contact Us</a></li>
             </ul>
+            <!--Cart Icon-->
+            <div class="cart-icon">
+              <i class="fa-solid fa-shopping-cart fa-lg"></i>
+              <span class="cart-count" id="cart-count">0</span>
+              <div id="cart-display">
+                <div class="cart-container">
+                    
+                    <div class="cart-item">
+                        <div class="image-name-container">
+                            <img class="cart-image" src="Images/Black Tea.jpg">
+                            <div class="cart-item-name">
+                                <h6 class="item-header">Black Tea</h6>
+                                <p class="item-subheader">Price: $2.99</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <div class="item-total-container">
+                                <div class="quantity">
+                                    <input type="number" id="quantity" name="quantity" value="10" min="0" placeholder="0">
+                                </div>
+                                <p class="item-total">Total: $4.98</p>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+
+                </div>
+              </div>
+              <div class="cart-total">
+                <h4>Total:</h4>
+              </div>
+            </div>
+
+            <i class="fa-regular fa-user"></i>
+            </div>
         </div>
+       
+
+        
+            <!--Menu icon items for smaller screens-->
+            <div class="navicon-menu">
+
+                
+                    <input type="checkbox" class="menu-btn" id="icon-button"/>
+                    <label for="icon-button" id="navicon-icon">&#9776;</label>
+                
+
+                <!--Collapsed Menu Cart Icon-->
+                <span class="cart-icon-sm item2">
+                    <i class="fa-solid fa-shopping-cart fa-lg"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </span>
+
+                <!--Menu Items-->
+                
+                <ul class="navicon-menu-list">
+                    <li><a class="nav-links" alt="home" href="Home.html">Home</a></li>
+                    <li><a class="nav-links" alt="menu" href="menu.html">Menu</a></li>
+                    <li><a class="nav-links" alt="about us" href="about-us.html">About Us</a></li>
+                    <li><a class="nav-links" alt="contact us" href="contact-us.html">Contact Us</a></li>
+                </ul>
+               
+                
+        
+            </div>
         <h1 style="color: burlywood;">Menu</h1>
         <div class="menu-items">
-            <div class="hot-items">
+            <div class="hot-items-container">
                 <i class="fa-solid fa-mug-hot fa-lg menu-logo" style="color: #f5deb3;"></i>
                 <h2 style="text-decoration: underline;">Hot Drinks</h2>
+                <div class="hot-items grid" id="hot-items">
+                <!-- <a href="www.facebook.com" target=""><div class="drink">
+                    <h3 class="drink-name" id="1001">Coffee</h3>
+                    <h3 class="drink-price">2</h3>
+                </div></a>
                 <div class="drink">
-                    <h3 class="drink-name">Coffee</h3>
-                    <div class="line"></div>
-                    <h3>2</h3>
+                    <h3 class="drink-name" id="1002">Hot Coco</h3>
+                    <h3 class="drink-price">2</h3>
                 </div>
                 <div class="drink">
-                    <h3 class="drink-name">Hot Coco</h3>
-                    <div class="line"></div>
-                    <h3>2</h3>
+                    <h3 class="drink-name" id="1003">Green Tea</h3>
+                    <h3 class="drink-price">2</h3>
                 </div>
                 <div class="drink">
-                    <h3 class="drink-name">Green Tea</h3>
-                    <div class="line"></div>
+                    <h3 class="drink-name" id="1004">Black Tea</h3>
                     <h3>2</h3>
                 </div>
-                <div class="drink">
-                    <h3 class="drink-name">Black Tea</h3>
-                    <div class="line"></div>
-                    <h3>2</h3>
-                </div>
+                </div> -->
             </div>
         
-            <div class="cold-items">
+            <div class="cold-items-container" id="cold-items">
                 <i class="fa-solid fa-whiskey-glass fa-lg" style="color: #f5deb3"></i>
                 <h2 style="text-decoration: underline;">Cool Drinks</h2>
-                <div class="drink">
-                    <h3 class="drink-name">Iced Coffee</h3>
-                    <div class="line"></div>
-                    <h3>3</h3>                    
+                <div class="cold-items grid">
+                <!-- <div class="drink">
+                    <h3 class="drink-name" id="1005">Iced Coffee</h3>
+                    <h3 class="drink-price">3</h3>                    
                 </div>
                 <div class="drink">
-                    <h3 class="drink-name">Frappe</h3>
-                    <div class="line"></div>
-                    <h3>4</h3>
+                    <h3 class="drink-name" id="1006">Frappe</h3>
+                    <h3 class="drink-price">4</h3>
                 </div>
                 <div class="drink">
-                    <h3 class="drink-name">Green Tea</h3>
-                    <div class="line"></div>
-                    <h3>2</h3>
+                    <h3 class="drink-name" id="1007">Green Tea</h3>
+                    <h3 class="drink-price">2</h3>
                 </div>
                 <div class="drink">
-                    <h3 class="drink-name">Black Tea</h3>
-                    <div class="line"></div>
-                    <h3>2</h3>
-                </div>
+                    <h3 class="drink-name" id="1008">Black Tea</h3>
+                    <h3 class="drink-price">2</h3>
+                </div> -->
+            </div>
             </div>
         </div>
         <footer>

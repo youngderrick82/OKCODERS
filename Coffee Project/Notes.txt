@@ -1,0 +1,13 @@
+Navbar--
+    Use temp icon and make it more dynamic later.
+    
+    Create profile icon next to cart and make login initial:
+        this isn't so important because I would rather make an actual login in system to be able to handle this.
+
+        Use profile icon as placeholder.
+
+        use FA regular user icon and then make solid user icon when hovered.
+
+
+        Plan to make the body into a container that scrolls so that we can keep the menu and footer in place and prevent an unending scroll sesh just to get to the footer or the menu.
+        
